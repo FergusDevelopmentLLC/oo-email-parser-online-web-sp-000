@@ -10,15 +10,11 @@ class EmailAddressParser
   end
 
   def parse
-    raw = []
     listArray = list.split(/[\s,']/)
     listArray.each { |email|
-      p email
-      if email.length > 0
-        raw << email
-      end
+      puts email
     }
-    p raw
+
   end
 
 end
