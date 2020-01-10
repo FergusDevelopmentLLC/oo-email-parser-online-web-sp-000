@@ -17,7 +17,7 @@ class EmailAddressParser
         list << email
       end
     }
-    list
+    p list
 
   end
 
