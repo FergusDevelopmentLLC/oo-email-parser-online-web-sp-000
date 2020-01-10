@@ -28,4 +28,4 @@ end
 
 emails = "avi@test.com, arel@test.com test@avi.com, test@arel.com"
 p = EmailAddressParser.new(emails)
-p.parser
+p.parse
