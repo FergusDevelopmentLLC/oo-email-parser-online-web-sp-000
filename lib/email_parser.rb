@@ -10,7 +10,7 @@ class EmailAddressParser
   end
 
   def parse
-    list.split(/[\s,']/)
+    list.split(/[\s,']/).compact
   end
 
 end
