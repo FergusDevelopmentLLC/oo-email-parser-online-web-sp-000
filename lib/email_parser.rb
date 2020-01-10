@@ -10,15 +10,15 @@ class EmailAddressParser
   end
 
   def parse
-    listArray = list.split(/[\s,']/)
-    list = []
-    listArray.each { |email|
-      if email.length > 0 && !list.include?(email)
-        list << email
-      end
-    }
-    p list
+    # listArray = list.split(/[\s,']/)
+    # list = []
+    # listArray.each { |email|
+    #   if email.length > 0 && !list.include?(email)
+    #     list << email
+    #   end
+    # }
 
+    list.split(/, | /)
   end
 
 end
