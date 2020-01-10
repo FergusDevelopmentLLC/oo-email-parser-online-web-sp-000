@@ -18,7 +18,7 @@ class EmailAddressParser
     #   end
     # }
 
-    list.split(/, | /)
+    list.split(/, | /).uniq
   end
 
 end
