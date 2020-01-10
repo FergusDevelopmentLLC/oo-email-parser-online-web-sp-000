@@ -13,7 +13,7 @@ class EmailAddressParser
     listArray = list.split(/[\s,']/)
     list = []
     listArray.each { |email|
-      if email.length > 0
+      if email.length > 0 && !list.include?(email)
         list << email
       end
     }
