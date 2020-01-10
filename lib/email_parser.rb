@@ -18,3 +18,6 @@ class EmailAddressParser
   end
 
 end
+
+p = EmailAddressParser.new("avi@test.com, arel@test.com")
+p.parse
