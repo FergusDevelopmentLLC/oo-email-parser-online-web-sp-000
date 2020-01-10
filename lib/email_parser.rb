@@ -10,7 +10,11 @@ class EmailAddressParser
   end
 
   def parse
-    list.split(/[\s,']/).compact
+    listArray = list.split(/[\s,']/)
+    listArray.each { |email|
+      puts email
+    }
+
   end
 
 end
