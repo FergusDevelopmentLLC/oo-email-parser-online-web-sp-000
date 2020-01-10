@@ -23,5 +23,9 @@ class EmailAddressParser
 
 end
 
-p = EmailAddressParser.new("avi@test.com arel@test.com")
-p.parse
+# p = EmailAddressParser.new("avi@test.com arel@test.com")
+# p.parse
+
+emails = "avi@test.com, arel@test.com test@avi.com, test@arel.com"
+p = EmailAddressParser.new(emails)
+p.parser
