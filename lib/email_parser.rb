@@ -12,7 +12,7 @@ class EmailAddressParser
   def parse
     listArray = list.split(/[\s,']/)
     listArray.each { |email|
-      puts email
+      puts email.length
     }
 
   end
